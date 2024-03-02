@@ -38,7 +38,7 @@
             </nav>
         </div>
     </header>
-    <section class="bgimage h-100vh mt d-flex align-items-end">
+    <section class="bgimage h-100vh mt d-flex align-items-end" id="home">
         <div class="container">
             <div class="row padding-top">
                 <div class="col-xl-6 col-12 d-flex justify-content-center align-items-center flex-column">
@@ -58,8 +58,14 @@
 
         </div>
     </section>
-    <section class="bg-color mt">
+    <section class="bg-color mt position-relative" id="about">
         <div class="container">
+            <div class="elipleft">
+                <img src="./assets/images/elips2left.png" alt="left" class="w-100">
+            </div>
+            <div class="elipright">
+                <img src="./assets/images/elips2right.png" alt="left" class="w-100">
+            </div>
             <div class="box">
                 <h2 class="heading-2 pb-1">Cursus ligula habitant sed integer.</h2>
                 <p class="subheading max-width">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis
@@ -79,7 +85,7 @@
                     Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column">
+                <div class="col-lg-6 col-12 d-flex align-items-center justify-content-center flex-column ">
                     <div>
                         <h2 class=" heading-2 mb-2">Cursus ligula habitant sed integer.</h2>
                         <p class="subheading max660">Urna, dictum volutpat augue tortor. Fermentum vulputate
@@ -92,18 +98,22 @@
                         <button class="btnmore">Learn more</button>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 mt-lg-0 mt-5">
-                    <img src="./assets/images/cartoonimage.png" alt="cartoon" class="w-100 max551">
+                <div class="col-lg-6 col-12 mt-lg-0 mt-5 position-relative">
+                    <img src="./assets/images/cartoonimage.png" alt="cartoon" class="w-100 max551 z-3">
+                    <div class="shadowabsolute">
+                        <img src="./assets/images/cartoonshadow.png" alt="shadow" class="w-100">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bgcolor mt py-90 position-relative overflow-hidden">
+    <section class="bgcolor mt py position-relative overflow-hidden" id="buy">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-12">
-                    <h2 class="heading-2">How to Buy</h2>
-                    <p class="subheading">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra
+                    <h2 class="heading-2 buy mb-0">How to Buy</h2>
+                    <p class="subheading mb-0 buytext">Urna, dictum volutpat augue tortor. Fermentum vulputate convallis
+                        viverra
                         facilisis. Aliquam porttitor sem rhoncus
                         rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
                         Cursus donec porttitor fames
@@ -117,7 +127,7 @@
                             <p class="text mb-0">Amet, integer et ultrices non viverra dolor dui</p>
                         </div>
                     </div>
-                    <div class="d-flex bg-color padding borderradius backgroundclr mt-3">
+                    <div class="d-flex bg-color padding borderradius backgroundclr margintop">
                         <div class="bgcircle d-flex justify-content-center align-items-center">
                             <p class="number mb-0">2</p>
                         </div>
@@ -126,7 +136,7 @@
                             <p class="text mb-0">Amet, integer et ultrices non viverra dolor dui</p>
                         </div>
                     </div>
-                    <div class="d-flex bg-color padding borderradius backgroundclr mt-3">
+                    <div class="d-flex bg-color padding borderradius backgroundclr margintop ">
                         <div class="bgcircle d-flex justify-content-center align-items-center">
                             <p class="number mb-0">3</p>
                         </div>
@@ -144,7 +154,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-color py-5 mt">
+    <section class="bg-color py-5 mt" id="tokenomics">
         <div class="container">
             <h2 class="heading-2 text-center pb-5 mb-0">Tokenomics</h2>
             <div class="row justify-content-center">
@@ -307,7 +317,16 @@
         </div>
     </section>
     <!-- timeline -->
-    <section class="bg-color mt py-5">
+    <section class="bg-color mt py-5 position-relative">
+        <div class="absolutetimeline">
+            <img src="./assets/images/elip.png" alt="shadow" class="w-100">
+        </div>
+        <div class="absolutetimeline1">
+            <img src="./assets/images/ellipshadow.png" alt="shadow" class="w-100">
+        </div>
+        <div class="leftelip">
+            <img src="./assets/images/timelineleftelip.png" alt="elip" class="w-100">
+        </div>
         <div class="container">
             <h2 class="heading-2 text-center pb-5">Roadmap</h2>
             <div class="timeline">
@@ -351,7 +370,7 @@
         </div>
     </section>
     <!-- accordian -->
-    <section class="bg-color py-5 mt">
+    <section class="bg-color pt-5 mt position-relative pb" id="faq">
         <div class="container">
             <h6 class="faq pb-4">FAQ</h6>
             <div class="accordion" id="accordionExample">
@@ -383,7 +402,7 @@
                         </button>
 
                     </h2>
-                    <div id="collapsetwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="collapsetwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p class="mb-0">Amet vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi
                                 orci. Aliquet ullamcorper quis felis at
@@ -455,6 +474,12 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="absoluteelip">
+                <img src="./assets/images/footerelip.png" alt="elip" class="w-100">
+            </div>
+            <div class="absoluteelip1">
+                <img src="./assets/images/footershadow.png" alt="elip" class="w-100">
             </div>
         </div>
     </section>
